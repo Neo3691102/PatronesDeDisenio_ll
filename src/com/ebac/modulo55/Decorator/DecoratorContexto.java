@@ -9,4 +9,5 @@ public class DecoratorContexto {
         trianguloEq.imprimirInformacion();
 
     }
+
 }
