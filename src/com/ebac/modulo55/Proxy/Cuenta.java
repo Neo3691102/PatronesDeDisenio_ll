@@ -1,4 +1,4 @@
-package com.ebac.modulo55.Decorator.Proxy;
+package com.ebac.modulo55.Proxy;
 
 public class Cuenta {
     private double fondos;

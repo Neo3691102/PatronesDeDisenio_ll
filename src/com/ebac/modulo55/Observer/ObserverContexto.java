@@ -1,4 +1,4 @@
-package com.ebac.modulo55.Decorator.Observer;
+package com.ebac.modulo55.Observer;
 
 public class ObserverContexto {
     public static void main(String[] args) {

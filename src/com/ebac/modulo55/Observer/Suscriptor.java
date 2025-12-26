@@ -1,4 +1,4 @@
-package com.ebac.modulo55.Decorator.Observer;
+package com.ebac.modulo55.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
