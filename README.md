@@ -15,7 +15,7 @@ Estos patrones se centran en cómo se componen y organizan las clases y los obje
 | Concepto | Implementación | Propósito |
 | :--- | :--- | :--- |
 | **Definición** | Permite agregar responsabilidades adicionales a un objeto de forma **dinámica**. Utiliza la composición para envolver el objeto en lugar de la herencia para extender la funcionalidad. | Evitar la explosión de subclases que resulta de intentar extender la funcionalidad base mediante herencia. |
-| **Ejemplo** | **Sistema de Notificaciones con Mejoras.** Una clase base (`EmailNotificador`) es envuelta por decoradores (`SMSDecorator`, `SlackDecorator`) para añadir nuevos canales de envío de mensajes sin modificar el código base. |
+| **Ejemplo** | **Creacion de clase triangulo y decorador para distintos tipos de triangulo** Una clase base (`TRiangulo`) es envuelta por decoradores (`nombre`, `vertices`, `formulaPerimetro` ) para añadir nuevos tipos de triangulo sin modificar el código base. |
 
 
 ### 2. Proxy (Apoderado)
@@ -23,7 +23,7 @@ Estos patrones se centran en cómo se componen y organizan las clases y los obje
 | Concepto | Implementación | Propósito |
 | :--- | :--- | :--- |
 | **Definición** | Proporciona un **sustituto** o marcador de posición (`Proxy`) para otro objeto real (`Sujeto Real`) para controlar el acceso a él. | Controlar el acceso al objeto real, diferir la inicialización (**Lazy Loading**), o añadir lógica de seguridad, *logging* o validación. |
-| **Ejemplo** | **Proxy de Acceso a Base de Datos (`ProxyBD`).** El proxy verifica los permisos de administrador del usuario antes de permitir el acceso al objeto `ServicioBDReal`, garantizando seguridad. |
+| **Ejemplo** | **Cuentas bancarias** En el ejemplo se ve la creacion de cuentas y de deposito, transferencia y consulta de saldo. |
 
 
 ---
@@ -37,7 +37,7 @@ Estos patrones se preocupan por los algoritmos y la asignación de responsabilid
 | Concepto | Implementación | Propósito |
 | :--- | :--- | :--- |
 | **Definición** | Define una dependencia **uno-a-muchos**: cuando el objeto principal (**Sujeto**) cambia de estado, todos sus dependientes (**Observadores**) son notificados automáticamente. | Implementar sistemas de eventos (*Publish-Subscribe*) donde los cambios en una parte del sistema deben propagarse a otras sin un acoplamiento directo. |
-| **Ejemplo** | **Alarma de Sensor de Temperatura.** El `SensorDeTemperatura` (Sujeto) notifica al `Display` y al `Ventilador` (Observadores) de cada cambio, permitiendo que cada uno reaccione de forma independiente. |
+| **Ejemplo** | **Suscripciones con notificacion** Es un sistema que añade suscriptores y manda notificaciones |
 
 
 ### 4. State (Estado)
@@ -48,9 +48,5 @@ Estos patrones se preocupan por los algoritmos y la asignación de responsabilid
 | **Ejemplo** | **Reproductor de Música.** La clase `Reproductor` delega sus acciones (`play`, `pausa`, `stop`) a clases de estado (`EstadoReproduciendo`, `EstadoPausado`). El comportamiento del reproductor varía según su estado actual. |
 
 
----
 
-## 🚀 Cómo Explorar los Ejemplos
 
-1.  **Clonar el Repositorio:**
-    ```bash
